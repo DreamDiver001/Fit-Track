@@ -1,6 +1,6 @@
 # FitTrack — Fitness & Workout Tracker
 
-![Tests](https://github.com/DreamDiver001/fittrack/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/DreamDiver001/Fit-Track/actions/workflows/tests.yml/badge.svg)
 
 Laravel 11 web app for logging workouts, tracking goals and managing a workout/exercise catalogue, with an admin back-office.
 
