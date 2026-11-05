@@ -45,26 +45,6 @@ tests/
 
 ---
 
-
-### Database Requirements
-
-- [x] At least 5 database tables with meaningful relationships and clear responsibilities
-  - `users`, `workouts`, `exercises`, `workout_exercises` (pivot), `workout_logs`, `goals` — **6 tables**
-- [x] At least one 1-to-N (one-to-many) relationship implemented and actively used
-  - `users → workout_logs`, `users → goals`, `workouts → workout_logs`
-- [x] At least one N-to-N (many-to-many) relationship with a proper pivot table
-  - `workouts ↔ exercises` via `workout_exercises` pivot table (with sets, reps, rest_seconds, sort_order)
-- [x] Consistent use of primary keys, foreign keys, and unique constraints
-  - All tables use auto-increment PKs, FKs with cascadeOnDelete, and unique constraint on `(workout_id, exercise_id)`
-- [x] At least one table with 10 or more fields (complex data modeling)
-  - `goals` has 12 fields; `workout_logs` has 10 fields
-- [x] Schema includes various data types:
-  - [x] `integer` — ids, duration_minutes, calories_burned, sets, reps, rest_seconds
-  - [x] `boolean` — is_admin, is_banned, is_public
-  - [x] `enum` — category, difficulty, muscle_group, equipment, effort_rating, goal_type, status
-  - [x] `timestamp` — created_at, updated_at, email_verified_at
-  - [x] `date` — logged_at (workout_logs), deadline (goals)
-
 ### Frontend Pages
 
 - [x] Responsive, visually appealing UI (usable on desktop and mobile)
